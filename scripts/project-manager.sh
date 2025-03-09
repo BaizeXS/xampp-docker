@@ -189,7 +189,7 @@ configure_database() {
   docker exec xampp-apache bash -c "sed -i 's/DB_HOST=127.0.0.1/DB_HOST=mariadb/g' $env_file"
   docker exec xampp-apache bash -c "sed -i 's/DB_DATABASE=laravel/DB_DATABASE=$db_name/g' $env_file"
   docker exec xampp-apache bash -c "sed -i 's/DB_USERNAME=root/DB_USERNAME=root/g' $env_file"
-  docker exec xampp-apache bash -c "sed -i 's/DB_PASSWORD=/DB_PASSWORD=${MARIADB_ROOT_PASSWORD:-root}/g' $env_file"
+  docker exec xampp-apache bash -c "sed -i 's/DB_PASSWORD=.*/DB_PASSWORD=${MARIADB_ROOT_PASSWORD:-root}/g' $env_file"
   
   echo -e "${GREEN}数据库连接已配置:${NC}"
   echo " - 数据库: $db_name"

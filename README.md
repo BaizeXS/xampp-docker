@@ -156,6 +156,31 @@ chmod +x scripts/xampp.sh scripts/project-manager.sh
 ./scripts/project-manager.sh create blog --vue
 ```
 
+#### Initialize an Existing Project
+
+```bash
+./scripts/project-manager.sh init [project-name] [options]
+```
+
+**Options**:
+
+- `--db-name=DBNAME` - Specify database name (defaults to project name)
+- `--db-init` - Initialize database (run migrations)
+- `--npm-install` - Install frontend dependencies
+
+**Examples**:
+
+```bash
+# Initialize an existing project
+./scripts/project-manager.sh init blog
+
+# Initialize with database setup
+./scripts/project-manager.sh init blog --db-name=custom_db --db-init
+
+# Full initialization with frontend dependencies
+./scripts/project-manager.sh init blog --db-init --npm-install
+```
+
 #### Manage Apache Virtual Host Configuration
 
 ```bash

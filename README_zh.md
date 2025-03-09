@@ -149,6 +149,31 @@ chmod +x scripts/xampp.sh scripts/project-manager.sh
 ./scripts/project-manager.sh create blog --vue
 ```
 
+#### 初始化已有项目
+
+```bash
+./scripts/project-manager.sh init [项目名] [选项]
+```
+
+**选项**:
+
+- `--db-name=DBNAME` - 指定数据库名(默认与项目名相同)
+- `--db-init` - 初始化数据库(运行迁移)
+- `--npm-install` - 安装前端依赖
+
+**示例**:
+
+```bash
+# 初始化已有项目
+./scripts/project-manager.sh init blog
+
+# 初始化并设置数据库
+./scripts/project-manager.sh init blog --db-name=custom_db --db-init
+
+# 完整初始化(包括前端依赖)
+./scripts/project-manager.sh init blog --db-init --npm-install
+```
+
 #### 管理 Apache 虚拟主机配置
 
 ```bash

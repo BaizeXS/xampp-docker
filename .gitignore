@@ -1,0 +1,72 @@
+# 操作系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 编辑器/IDE文件
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# 日志文件和数据库
+*.log
+logs/
+*.sql
+*.sqlite
+*.sqlite3
+# lv-bookstore 实验初始化数据库脚本
+!config/mariadb/init/01-lv-bookstore.sql
+
+# Docker相关
+.docker/
+.docker-compose.override.yml
+
+# 环境变量文件(但保留示例文件)
+.env
+!.env.example
+
+# XAMPP/PHP相关
+data/mysql/
+data/mariadb/
+data/backups/
+data/tmp/
+www/tmp/
+www/cache/
+www/vendor/
+www/node_modules/
+
+# 依赖管理
+composer.phar
+vendor/
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# 临时文件
+tmp/
+temp/
+.tmp/
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# 编译和构建目录
+dist/
+build/
+output/
+
+# 其他
+*.zip
+*.tar.gz
+*.rar 

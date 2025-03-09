@@ -34,14 +34,24 @@ logs/
 !.env.example
 
 # XAMPP/PHP相关
+# 确保data和www文件夹本身不被忽略，只忽略特定子目录
 data/mysql/
 data/mariadb/
 data/backups/
 data/tmp/
+
+# 确保data文件夹被追踪
+!data/
+!data/.gitkeep
+
 www/tmp/
 www/cache/
 www/vendor/
 www/node_modules/
+
+# 确保www文件夹被追踪
+!www/
+!www/.gitkeep
 
 # 依赖管理
 composer.phar

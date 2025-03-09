@@ -2,7 +2,7 @@
 
 ## 1. 简介
 
-本项目为HKU ICOM6034 Web Engineering 课程提供了一个简便易用的开发环境。该课程主要使用 HTML、CSS、JavaScript 和 PHP 进行教学，同时深入涵盖 jQuery、AJAX、Laravel 和 Vite 等现代 Web 技术栈。
+本项目为 HKU ICOM6034 Web Engineering 课程提供了一个简便易用的开发环境。该课程主要使用 HTML、CSS、JavaScript 和 PHP 进行教学，同时深入涵盖 jQuery、AJAX、Laravel 和 Vite 等现代 Web 技术栈。
 
 借助 Docker 技术，你可以在几分钟内快速搭建完整的模拟 XAMPP 环境，无需担心复杂的安装和配置过程。尽管可以在传统 XAMPP 环境中进行课程实践，但本项目通过 Docker 和 Docker Compose 提供了一个更一致、可移植且易于配置的替代方案。
 
@@ -52,7 +52,7 @@ xampp-docker/
 ### 步骤 1：获取项目
 
 ```bash
-git clone https://github.com/yourusername/xampp-docker.git
+git clone https://github.com/BaizeXS/xampp-docker.git
 cd xampp-docker
 ```
 
@@ -100,10 +100,10 @@ chmod +x scripts/xampp.sh scripts/project-manager.sh
 
 **可用命令**:
 
-- `start` - 启动Docker环境
-- `stop` - 停止Docker环境
-- `restart` - 重启Docker环境
-- `status` - 显示Docker环境状态
+- `start` - 启动 Docker 环境
+- `stop` - 停止 Docker 环境
+- `restart` - 重启 Docker 环境
+- `status` - 显示 Docker 环境状态
 - `shell` - 进入 Apache 容器的 shell
 - `mysql` - 进入 MariaDB 客户端
 - `logs` - 查看 Apache 容器日志
@@ -149,7 +149,7 @@ chmod +x scripts/xampp.sh scripts/project-manager.sh
 ./scripts/project-manager.sh create blog --vue
 ```
 
-#### 管理Apache虚拟主机配置
+#### 管理 Apache 虚拟主机配置
 
 ```bash
 ./scripts/project-manager.sh config [子命令] [参数...]
@@ -157,13 +157,13 @@ chmod +x scripts/xampp.sh scripts/project-manager.sh
 
 **子命令**:
 
-- `list` - 列出所有可用Apache虚拟主机配置
-- `active` - 显示当前活动的Apache虚拟主机配置
-- `enable [项目名]` - 启用指定的Apache虚拟主机配置
-- `disable [项目名]` - 禁用指定的Apache虚拟主机配置
-- `switch [项目名]` - 切换到指定的Apache虚拟主机配置
-- `basic` - 切换到默认Apache虚拟主机配置
-- `create [项目名]` - 根据模版创建新的Apache虚拟主机配置
+- `list` - 列出所有可用 Apache 虚拟主机配置
+- `active` - 显示当前活动的 Apache 虚拟主机配置
+- `enable [项目名]` - 启用指定的 Apache 虚拟主机配置
+- `disable [项目名]` - 禁用指定的 Apache 虚拟主机配置
+- `switch [项目名]` - 切换到指定的 Apache 虚拟主机配置
+- `basic` - 切换到默认 Apache 虚拟主机配置
+- `create [项目名]` - 根据模版创建新的 Apache 虚拟主机配置
 
 **示例**:
 
@@ -186,7 +186,7 @@ chmod +x scripts/xampp.sh scripts/project-manager.sh
 - `start [项目名]` - 启动项目的开发环境
 - `stop [项目名]` - 停止项目的开发环境
 - `status` - 显示所有正在运行的开发环境
-- `fix-vite [项目名]` - 修复项目的Vite配置
+- `fix-vite [项目名]` - 修复项目的 Vite 配置
 
 启动开发环境将同时启动：
 

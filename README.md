@@ -59,7 +59,7 @@ Before starting, make sure you have the following installed on your computer:
 ### Step 1: Get the Project
 
 ```bash
-git clone https://github.com/yourusername/xampp-docker.git
+git clone https://github.com/BaizeXS/xampp-docker.git
 cd xampp-docker
 ```
 
